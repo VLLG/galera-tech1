@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box ;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: cadetblue;
+    border-radius: 20px;
+}
+header p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+header h1{
+    text-align: center;
+}
+nav{
+    float: left;
+    width: 20%;
+}
+nav ul li{
+    list-style: none;
+    border-bottom: 2px solid #141414;
+    width: 90%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(144, 144, 144);
+    font-size: 26px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+nav ul a:hover{ /* Quando passar o mouse em cima sobre o link */
+    color: aqua;
+}
+main{
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+main p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+main p span{
+    color:aquamarine;
+    font-style: italic;
+}
+.laranja{
+    color:orangered;
+}
+.roxo{
+    color:purple;
+}
+aside{
+    background-color: rgb(0, 212, 227);
+    float: left;
+    width: 20%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 8px #141414, 5px 5px 8px #0f00af;
+}
+footer{
+    background-color: rgb(0, 163, 191);
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+    text-align: center;
+    line-height: 50px
+}
+footer p a{
+    text-decoration: none;
+    color: #141414;
+    font-size: 26px;
+    
+} 
+footer p a:hover{
+    color:aquamarine;
+    text-decoration: underline;
+}
+
+/* responsividade = ajustar a largura da tela */
+     /* for tablets */
+     @media only screen and (max-width:800px){
+        aside{
+            width: 100%;
+     }main{
+        width: 80%;
+     }
+     footer{
+        height: auto;
+     }
+
+     }
+     /* responsividade = ajustar a largura da tela */
+     /* para mobile */
+     @media only screen and (max-width:500px){
+       nav, main, aside{
+        width: 100%;
+        margin-bottom: 20px;
+       }
+     footer{
+        height: auto;
+     }
+
+     }
